@@ -441,10 +441,8 @@ ImprovedTube.playerAutofullscreen = function () {
 
 		setTimeout(function() {
             document.querySelector('video').play();
-            console.log("Video resumed after delay");
-        }, 2000);  // Adjust the delay as needed
+        }, 1000);  // Adjust the delay as needed
 		
-		console.log("OMG ITCONFIRMED WORKS!");
 	}
 };
 /*------------------------------------------------------------------------------
