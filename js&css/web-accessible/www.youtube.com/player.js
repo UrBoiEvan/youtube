@@ -437,6 +437,14 @@ ImprovedTube.playerAutofullscreen = function () {
 		!document.fullscreenElement
 	) {
 		this.elements.player.toggleFullscreen();
+		document.querySelector('video').pause();  // Pauses the video starts playing
+
+		setTimeout(function() {
+            document.querySelector('video').play();
+            console.log("Video resumed after delay");
+        }, 2000);  // Adjust the delay as needed
+		
+		console.log("OMG ITCONFIRMED WORKS!");
 	}
 };
 /*------------------------------------------------------------------------------
